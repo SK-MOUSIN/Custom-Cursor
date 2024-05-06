@@ -9,19 +9,6 @@ allPageContainer.addEventListener("mousemove", function(val) {
     })
 })
 
-allPageContainer.addEventListener("mouseleave", function(val) {
-    gsap.to(".cursor", {
-        scale: 0,
-        duration: .8
-    })
-})
-
-allPageContainer.addEventListener("mouseenter", function() {
-    gsap.to(".cursor", {
-        scale:1
-    })
-})
-
 image.addEventListener("mouseenter", function() {
     document.querySelector(".cursor").innerHTML = "View More"
     gsap.to(".cursor", {
